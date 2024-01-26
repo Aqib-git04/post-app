@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Facebook Post App</title>
+
+</head>
+<body>
+<div class="post-container">
+    <div id="create-post">
+        <div class="upper-div">
+            <div class="cross"><i class="fa-solid fa-x"></i></div>
+            <div class="createPost">Create Post</div>
+            <div class="post-btn">
+            <button onclick="postBtn()">Post</button></div>
+        </div>
+        </div>
+  <div class="post-header">
+    <img src="./assets/D0B084B2-6840-4E30-8065-53A929EC95F4.jpeg" alt="User Avatar" class="user-avatar">
+    <div class="user-name">Syed Aqib</div>
+    <div>
+    <select name="" id=""><option value="">Friends</option></select>
+    <select name="" id=""><option value="">Album</option></select>
+    <select name="" id=""><option value="">Off</option></select></div>
+  </div>
+
+  <div id="content">
+    <textarea id="post-para" placeholder="What's on your mind?"></textarea>
+
+  </div>
+  <div id="hide">
+  <div class="post-actions">
+    <div class="action-btn">
+     <span id="like"> <i class="fas fa-thumbs-up" onclick="likebtn()"></i> Like </span>
+    </div>
+    <div class="action-btn">
+      <i class="fas fa-comment"></i> Comment
+    </div>
+    <div class="action-btn">
+      <i class="fas fa-share"></i> Share
+    </div>
+  </div>
+  <div class="comment">
+    <div class="user-name">Syed Aqib</div>
+    <p>Great post! 👍</p>
+  </div>
+</div> 
+<!-- hide container just above -->
+
+  <!-- Add more comments here -->
+<div id="items">
+  <div class="changing-text">
+      <div class="font-size">Aa</div>
+      <div id=""><input type="number" id="myRange" min="0" max="50" value="20" oninput="fontRange()" >
+      </div>
+    <div class="bold" onclick="boldText()"><i class="fa-solid fa-bold"></i></div>
+    <div class="italic"onclick="italicText()" ><i class="fa-solid fa-italic"></i></div>
+    <div class="underline"onclick="underlineText()" ><i class="fa-solid fa-underline"></i></div>
+    <div class="center" onclick="textCenter()"><i class="fa-solid fa-align-center"></i></div>
+    <div><i class="fa-regular fa-face-smile"></i>
+
+     <select id="select" onchange="selectEmoji()"><option>Emojies</option>
+     <option value="😂">😂</option>
+     <option value="😀">😀</option>
+     <option value="😍">😍</option>
+     <option value="❤️">❤️</option>
+     <option value="💯">💯</option>  
+  </select>
+</div></div>
+
+<div class="images-sec">
+    <input class="images" type="color" name="" id="color-picker" onchange="colorPicker()">
+   <div class="images" onclick="changeBackground()"><img src="./assets/unnamed.png" alt="" width="50"></div>
+   <div class="images" onclick="changeBackground()"><img src="./assets/th.jpeg" alt="" width="50"></div>
+   <div class="images" onclick="changeBackground()"><img src="./assets/img.jpeg" alt="./assets/ th(1).jpeg" width="50"></div>
+   <div class="images" onclick="changeBackground()"><img src="./assets/Label-Scheme-Facebook-Background.jpg" alt="" width="50"></div>
+   <div class="images" onclick="changeBackground()"><img src="./assets/img2.jpeg" alt="" width="50"></div>
+   <div class="images" onclick="changeBackground()"><img src="./assets/Download-Facebook-Background-Free.jpg" alt="" width="50"></div>
+</div>
+</div> </div>
+
+<script src="app.js"></script>
+<!-- main div ends here -->
+
+<!-- Add more posts here -->
+
+</body>
+</html>
