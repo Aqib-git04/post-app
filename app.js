@@ -8,6 +8,12 @@ function postBtn(){
      hideitems.style.display='none';
 }
 
+function upperLowercase(){
+  var postPara=document.getElementById("post-para");
+   var checkText =postPara.style.textTransform;
+   postPara.style.textTransform=(checkText==='uppercase')?'lowercase':'uppercase';
+}
+
 function boldText() {
 
    var postPara=document.getElementById("post-para");
